@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Footer from '../components/layout/Footer.tsx'
 import Navbar from '../components/layout/Navbar.tsx'
 import Container from '../components/layout/Container.tsx'
@@ -13,9 +14,20 @@ import ContatoPage from '../pages/Contato/index.tsx'
 import PoliticaPage from '../pages/Politica/index.tsx'
 import ObrigadoPage from '../pages/Obrigado/index.tsx'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <div className="min-h-screen bg-[#FAF8F3] text-slate-800">
+      <ScrollToTop />
       <Navbar />
       <main className="pt-20 md:pt-24">
         <Routes>

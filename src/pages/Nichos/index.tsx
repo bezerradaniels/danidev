@@ -37,7 +37,7 @@ export default function NichosPage() {
                 key={nicho.name}
                 className="rounded-2xl border border-slate-200 bg-white p-6 text-center transition hover:border-[#14CC45]/30 hover:shadow-lg"
               >
-                <span className="icon text-4xl text-[#14CC45]">{nicho.icon}</span>
+                <span className="icon text-5xl text-[#14CC45]">{nicho.icon}</span>
                 <h3 className="mt-4 font-bold text-slate-900">{nicho.name}</h3>
                 <p className="mt-2 text-sm text-slate-500">{nicho.description}</p>
               </div>

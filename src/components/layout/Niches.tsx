@@ -41,8 +41,8 @@ export default function Niches() {
               className={`fade-in-scale group flex flex-col items-center gap-4 rounded-2xl border border-slate-200 bg-[#FAF8F3] p-6 text-center transition hover:border-[#14CC45]/30 hover:shadow-lg ${gridVisible ? 'visible' : ''}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white shadow-sm transition group-hover:bg-[#14CC45]/10">
-                <span className="icon text-4xl text-slate-400 transition group-hover:text-[#14CC45]">
+              <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-white shadow-sm transition group-hover:bg-[#14CC45]/10">
+                <span className="icon text-5xl text-slate-400 transition group-hover:text-[#14CC45]">
                   {niche.icon}
                 </span>
               </div>
